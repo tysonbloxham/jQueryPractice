@@ -44,6 +44,16 @@
         $(event.currentTarget).removeClass('photo-active');
     });
 
+    $('.product-photo').on('click', event => {
+        $(event.currentTarget).animate({
+            opacity: 0.25
+        }, 1000, () => {
+            $(event.currentTarget).animate({
+                opacity: 1
+            }, 1000);
+        });
+    })
+
     $('.lower-logo').on('mouseenter', () => {
         $('.lower-logo').css("background-color", "aqua");
         $('footer').css("background-color", "aqua");
