@@ -41,6 +41,9 @@ nav {
     background-color: #303030;
     color: #EFEFEF;
 }
+    nav .logo {
+        /*background-color: red;*/
+    }
 
     nav .container {
         display: flex;
