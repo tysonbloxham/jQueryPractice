@@ -3,9 +3,7 @@
     $('.logo').on('mouseenter', () => {
         $('.logo').css("background-color", "aqua");
         $('nav').css("background-color", "aqua");
-    });
-
-    $('.logo').on('mouseleave', () => {
+    }).on('mouseleave', () => {
         $('.logo').css("background-color", "#303030");
         $('nav').css("background-color", "#303030");
     })
@@ -49,9 +47,7 @@
     $('.lower-logo').on('mouseenter', () => {
         $('.lower-logo').css("background-color", "aqua");
         $('footer').css("background-color", "aqua");
-    });
-
-    $('.lower-logo').on('mouseleave', () => {
+    }).on('mouseleave', () => {
         $('.lower-logo').css("background-color", "#303030");
         $('footer').css("background-color", "#303030");
     })
