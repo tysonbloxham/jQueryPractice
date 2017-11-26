@@ -1,6 +1,6 @@
 ﻿$(document).ready(() => {
 
-    $('.shoe-details').show();
+    //$('.shoe-details').show();
 
     $('.product-details').on('click', event => {
         $(event.currentTarget).next().slideToggle();
@@ -9,7 +9,7 @@
     $('.shoe-details li').on('click', event => {
         $(event.currentTarget).addClass('active');
         $(event.currentTarget).siblings().removeClass('active');
-        $('buy-now-button').removeClass('disabled');
+        $(event.currentTarget).parent().parent().next().removeClass('disabled');
     });
 
     $('.login-button').on('click', () => {
@@ -21,7 +21,6 @@
         $('.login-form').slideToggle();
         $('.login-button').toggleClass('button-active');
     });
-
 
     $('.product-photo').on('mouseenter', event => {
         $(event.currentTarget).addClass('photo-active');

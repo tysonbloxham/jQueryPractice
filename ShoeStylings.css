@@ -279,3 +279,8 @@ footer {
         footer .container object {
             width: 4.5em;
         }
+
+.craziness {
+    background-color: red;
+    color: red;
+}
