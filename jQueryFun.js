@@ -1,12 +1,14 @@
 ﻿$(document).ready(() => {
 
-    $('.logo').on('mouseenter', () => {
-        $('.logo').css("background-color", "aqua");
-        $('nav').css("background-color", "aqua");
-    }).on('mouseleave', () => {
-        $('.logo').css("background-color", "#303030");
-        $('nav').css("background-color", "#303030");
-    })
+    $('.logo').hover(
+        () => {
+            $('.logo').css("background-color", "aqua");
+            $('nav').css("background-color", "aqua");
+        }, () => {
+            $('.logo').css("background-color", "#303030");
+            $('nav').css("background-color", "#303030");
+        }
+    );
 
     $('.login-button').on('click', () => {
         $('.login-form').slideToggle();
@@ -52,14 +54,16 @@
                 opacity: 1
             }, 1000);
         });
-    })
+    });
 
-    $('.lower-logo').on('mouseenter', () => {
-        $('.lower-logo').css("background-color", "aqua");
-        $('footer').css("background-color", "aqua");
-    }).on('mouseleave', () => {
-        $('.lower-logo').css("background-color", "#303030");
-        $('footer').css("background-color", "#303030");
-    })
+    $('.lower-logo').hover(
+        () => {
+            $('.lower-logo').css("background-color", "aqua");
+            $('footer').css("background-color", "aqua");
+        }, () => {
+            $('.lower-logo').css("background-color", "#303030");
+            $('footer').css("background-color", "#303030");
+        }
+    );
 
 })
