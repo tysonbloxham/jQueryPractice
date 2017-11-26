@@ -45,4 +45,15 @@
     }).on('mouseleave', function () {
         $(event.currentTarget).removeClass('photo-active');
     });
+
+    $('.lower-logo').on('mouseenter', () => {
+        $('.lower-logo').css("background-color", "aqua");
+        $('footer').css("background-color", "aqua");
+    });
+
+    $('.lower-logo').on('mouseleave', () => {
+        $('.lower-logo').css("background-color", "#303030");
+        $('footer').css("background-color", "#303030");
+    })
+
 })
