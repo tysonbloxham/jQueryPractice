@@ -2,18 +2,15 @@
 
     $('.shoe-details').show();
 
-    $('.more-details-button').on('click', event => {
-
+    $('.product-details').on('click', event => {
+        $(event.currentTarget).next().slideToggle();
     });
 
     $('.shoe-details li').on('click', event => {
         $(event.currentTarget).addClass('active');
         $(event.currentTarget).siblings().removeClass('active');
+        $('buy-now-button').removeClass('disabled');
     });
-
-
-
-    ///////////////////////////////////////////
 
     $('.login-button').on('click', () => {
         $('.login-form').slideToggle();
@@ -26,10 +23,10 @@
     });
 
 
-    $('.product-photo').on('mouseenter', () => {
-        $(this).addClass('photo-active');
+    $('.product-photo').on('mouseenter', event => {
+        $(event.currentTarget).addClass('photo-active');
     }).on('mouseleave', function () {
-        $(this).removeClass('photo-active');
+        $(event.currentTarget).removeClass('photo-active');
     });
 
     $('.menu-button').on('click', () => {
