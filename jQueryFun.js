@@ -13,6 +13,7 @@
     $('.login-button').on('click', () => {
         $('.login-form').slideToggle();
         $('.login-button').toggleClass('button-active');
+        $('.username').focus();
     });
 
     $('.login-form').on('mouseleave', () => {
@@ -54,6 +55,11 @@
                 opacity: 1
             }, 1000);
         });
+    });
+
+    $('.cart-add').on('click', event => {
+        $(event.currentTarget).parent().remove();
+        alert("You don't really want those shoes. Trust me.");
     });
 
     $('.lower-logo').hover(
